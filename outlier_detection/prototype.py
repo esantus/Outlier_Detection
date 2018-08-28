@@ -96,7 +96,7 @@ class Embeddings:
                 if line:
                     try:
                         embeds.append(line[1:])
-                        word = line[0]
+                        word = line[0].lower()
                         self._str2idx[word] = cur_idx
                         cur_idx += 1
                     except:
